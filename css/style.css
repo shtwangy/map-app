@@ -10,3 +10,21 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.nav-bar {
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.6;
+    width: 100%;
+    align-items: center;
+}
+
+nav.nav-center ul {
+    text-align: center;
+    width: 100%;
+}
+nav.nav-center ul li {
+    display: inline;
+    float: none;
+}
