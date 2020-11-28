@@ -48,6 +48,9 @@ map.on('click', function(e) {
 	// console.log(e.point);
 	// XY ⇒ 経緯度の変換は以下の通り
 	// console.log(map.unproject(e.point));
+
+	console.log(`緯度：${e.lngLat.lat}`);
+	console.log(`経度：${e.lngLat.lng}`);
 });
 
 // 右クリック処理
