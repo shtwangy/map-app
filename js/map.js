@@ -64,3 +64,20 @@ map.on('mousemove', function(e) {
 	// ログ
 	// console.log(e);
 });
+
+const showToast = (elementId, message) => {
+	const addBtn = document.getElementById(elementId);
+	if (addBtn) {
+		addBtn.addEventListener('click', () => {
+			M.toast({
+				html: message,
+				displayLength: 3000
+			});
+		});
+	}
+};
+
+showToast('add-btn', 'ポイントを追加します');
+showToast('delete-btn', 'ポイントを削除します');
+showToast('refresh-btn', 'ポイントをリフレッシュします');
+showToast('login-btn', 'ログインします');
