@@ -81,3 +81,13 @@ showToast('add-btn', 'ポイントを追加します');
 showToast('delete-btn', 'ポイントを削除します');
 showToast('refresh-btn', 'ポイントをリフレッシュします');
 showToast('login-btn', 'ログインします');
+
+const loginBtn = document.getElementById('login-btn');
+if (loginBtn) {
+	loginBtn.addEventListener('click', () => {
+		document.getElementById('preloader').style.display = 'flex';
+		setTimeout(() => {
+			document.getElementById('preloader').style.display = 'none';
+		}, 3000);
+	});
+}
