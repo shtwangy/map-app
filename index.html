@@ -38,11 +38,30 @@
 			<li><a id="add-btn" class="btn-floating btn-small waves-effect waves-light btn black"><i class="material-icons">add</i></a></li>
 			<li><a id="delete-btn" class="btn-floating btn-small waves-effect waves-light btn black"><i class="material-icons">delete</i></a></li>
 			<li><a id="refresh-btn" class="btn-floating btn-small waves-effect waves-light btn black"><i class="material-icons">refresh</i></a></li>
-			<li><a id="login-btn" class="btn-floating btn-small waves-effect waves-light btn black"><i class="material-icons">account_box</i></a></li>
+			<li><a id="login-icon" class="btn-floating btn-small waves-effect waves-light btn black modal-trigger" href="#modal1"><i class="material-icons">account_box</i></a></li>
 		</ul>
 	</nav>
+	<div id="modal1" class="modal login-dialog">
+		<div class="modal-content">
+			<h4>ログイン</h4>
+			<div class="row">
+				<form class="col s12">
+					<div class="input-field">
+						<input placeholder="アカウント名" id="name" type="text" class="validate">
+					</div>
+					<div class="input-field">
+						<input placeholder="パスワード" id="password" type="text" class="validate">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a id="login-btn" href="#!" class="modal-close btn waves-effect">ログイン</a>
+			<a href="#!" class="modal-close btn-flat">キャンセル</a>
+		</div>
+	</div>
 </body>
-
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <!-- Mapbox 関連-->
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
 <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>

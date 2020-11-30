@@ -80,7 +80,6 @@ const showToast = (elementId, message) => {
 showToast('add-btn', 'ポイントを追加します');
 showToast('delete-btn', 'ポイントを削除します');
 showToast('refresh-btn', 'ポイントをリフレッシュします');
-showToast('login-btn', 'ログインします');
 
 const loginBtn = document.getElementById('login-btn');
 if (loginBtn) {
@@ -91,3 +90,9 @@ if (loginBtn) {
 		}, 3000);
 	});
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+	var elems = document.querySelectorAll('.modal');
+	var options = {};
+	var instances = M.Modal.init(elems, options);
+});

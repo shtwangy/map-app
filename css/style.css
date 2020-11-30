@@ -82,3 +82,7 @@ nav.nav-center ul li {
     display: inline-block;
     color: #fff;
 }
+
+.login-dialog {
+    width: 30%;
+}
