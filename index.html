@@ -35,13 +35,29 @@
 	</div>
 	<nav class="nav-bar nav-center">
 		<ul>
-			<li><a id="add-btn" class="btn-floating btn-small waves-effect waves-light btn black"><i class="material-icons">add</i></a></li>
+			<li>
+				<a
+						id="create-point-icon-btn"
+						class="btn-floating btn-small waves-effect waves-light btn black modal-trigger"
+						href="#create-point-dialog"
+				>
+					<i class="material-icons">add</i>
+				</a>
+			</li>
 			<li><a id="delete-btn" class="btn-floating btn-small waves-effect waves-light btn black"><i class="material-icons">delete</i></a></li>
 			<li><a id="refresh-btn" class="btn-floating btn-small waves-effect waves-light btn black"><i class="material-icons">refresh</i></a></li>
-			<li><a id="login-icon" class="btn-floating btn-small waves-effect waves-light btn black modal-trigger" href="#modal1"><i class="material-icons">account_box</i></a></li>
+			<li>
+				<a
+						id="login-icon-btn"
+						class="btn-floating btn-small waves-effect waves-light btn black modal-trigger"
+						href="#login-dialog"
+				>
+					<i class="material-icons">account_box</i>
+				</a>
+			</li>
 		</ul>
 	</nav>
-	<div id="modal1" class="modal login-dialog">
+	<div id="login-dialog" class="modal dialog">
 		<div class="modal-content">
 			<h4>ログイン</h4>
 			<div class="row">
@@ -57,6 +73,22 @@
 		</div>
 		<div class="modal-footer">
 			<a id="login-btn" href="#!" class="modal-close btn waves-effect">ログイン</a>
+			<a href="#!" class="modal-close btn-flat">キャンセル</a>
+		</div>
+	</div>
+	<div id="create-point-dialog" class="modal dialog">
+		<div class="modal-content">
+			<h4>ポイント作成</h4>
+			<div class="row">
+				<form class="col s12">
+					<div class="input-field">
+						<input placeholder="名前" id="create-point-name" type="text" class="validate">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a id="create-point-btn" href="#!" class="modal-close btn waves-effect">作成</a>
 			<a href="#!" class="modal-close btn-flat">キャンセル</a>
 		</div>
 	</div>
