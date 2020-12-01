@@ -77,7 +77,6 @@ const showToast = (elementId, message) => {
 	}
 };
 
-showToast('add-btn', 'ポイントを追加します');
 showToast('delete-btn', 'ポイントを削除します');
 showToast('refresh-btn', 'ポイントをリフレッシュします');
 
